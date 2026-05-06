@@ -1,0 +1,24 @@
+{
+    "title": "Input schema of the Freelancer Portfolio Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "Portfolio pages, galleries, or profile pages to start scraping (company career pages, Behance/Dribbble profile pages, or self-hosted portfolios).",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://dribbble.com"
+                }
+            ]
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Requests per Crawl",
+            "type": "integer",
+            "description": "Maximum number of requests that can be made by this crawler per run.",
+            "default": 100
+        }
+    }
+}
